@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Graduate');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+html,body
+{
+  margin:0;
+  padding:0;
+}
+body
+{
+  font-family:Arial;
+  background:white;
+  color:#323232;
+}
+.hide
+{
+  display:none;
+}
+p
+{
+  margin:0;
+  padding:5px;
+}
+.levelname
+{
+  font-family:Graduate;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  display: inline-block;
+  font-size: 22px;
+  color: rgba(0,0,0,0.3);
+  letter-spacing: 3px;
+}
+.keyword
+{
+  display:inline-block;
+  padding: 0 5px;
+  cursor:pointer;
+}
+#showchar #charName
+{
+  color:black;
+  padding:20px;
+  margin:0;
+  background:url(header.jpg);
+  font-family:'Averia Sans Libre';
+  font-size:3.5em;
+  text-align:center;
+  border-bottom: 2px solid #323232;
+}
+#showchar #skills section h1
+{
+  font-family:'Averia Sans Libre', sans-serif;
+  font-size: 2.4em;
+  text-align:center;
+}
+#charName span{
+  font-size:0.5em;
+  display:block;
+}
+.skilllist
+{
+  width: 80%;
+  margin:0 auto;
+  text-align:center;
+}
+.skillcontainer
+{
+  width:30%;
+  display:inline-block;
+  padding:5px 10px;
+}
+.skilltext
+{
+  text-align:center;
+  font-family:Righteous, sans;
+  position:relative;
+}
+#skills
+{
+  font-family:'Open Sans';
+  color:black;
+  font-size:0.9em;
+  width:100%;
+}
+.branched .marker
+{
+  background-color:#309930 !important;
+}
+.branched .barcontents
+{
+  background:#5de95d !important;
+}
+.branched .skillbar
+{
+  border: 3px solid #309930;
+}
+.skillbar
+{
+  display:inline-block;
+  border: 3px solid #355b76;
+
+  height:2.2em;
+  width:100%;
+  position:relative;
+}
+.skillbar .cap
+{
+  position:absolute;
+  height: 100%;
+  width:4px;
+  background:#ffff61;
+  z-index:200;
+}
+.skillbar .barcontents
+{
+  text-align:left;
+  background:#47dddd;
+  position:absolute;
+  left:0;
+  height:0;
+  height:100%;
+}
+.marker
+{
+  position:absolute;
+  top:0;
+  height:100%;
+  background:#355b76;
+  width:4px;
+  z-index:5;
+}
+.branchingindicator
+{
+  position:absolute;
+  top:0;
+  height:100%;
+  background:#309930;
+  width:4px;
+  z-index:5;
+}
+.branchtext
+{
+  position:absolute;
+  left:0;
+  bottom:0;
+  color:#468110;
+  font-size: 0.9em;
+  padding:0;
+  margin:0;
+  width:100%;
+  text-align:left;
+}
+.keywords
+{
+  text-align:center;
+  padding:20px;
+}
+.keywordSuggest
+{
+  height:20px;
+  padding:0;
+  font-size: 0.9em;
+  margin: 20px auto 0 auto;
+  text-align:left;
+  width:50%;
+  color:#da8a17;
+}
+.keywords input
+{
+  text-align:left;
+  font-size: 16px;
+  padding:5px;  
+  width:50%;
+}
+.suggestions
+{
+  text-align:center;
+  width:60%;
+  margin:0 auto;
+}
+.suggestions a
+{
+  display:inline-block;
+  padding:10px;
+  text-align:center;
+  position:relative;
+  margin:5px;
+  font-weight:bold;  
+  color: #dc7328;
+  text-decoration: none;
+  cursor:pointer;
+  text-shadow:black;
+}
+.suggestions a:hover
+{
+  text-decoration:underline;
+}
+.suggestions a:visited{
+  color: #dc7328;
+}
+.suggestions a p
+{
+  padding:0;
+  margin:0;
+  padding-right:10px;
+  display:inline-block;
+  color:black;
+  height:15px;
+  width:15px;  
+}
