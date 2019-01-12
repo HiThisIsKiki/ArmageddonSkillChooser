@@ -1201,7 +1201,7 @@ function listSuggestions(keywords)
   }
   if ($('.suggestions a').length == 0 )
   {
-    $('.suggestions').html("Sorry! Nothing found!")
+    $('.suggestions').html("Sorry! There is no class that gets all those skills.")
   }
 }
 function pretty(str)
