@@ -1191,14 +1191,17 @@ function listSuggestions(keywords)
         }
         else {
           $('.suggestions').append(link);
-        }
-
+        }        
       }
     }
   }
   for (var i in toAdd)
   {
     $('.suggestions').append(toAdd[i]);
+  }
+  if ($('.suggestions a').length == 0 )
+  {
+    $('.suggestions').html("Sorry! Nothing found!")
   }
 }
 function pretty(str)
