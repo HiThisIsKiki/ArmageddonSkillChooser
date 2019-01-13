@@ -239,7 +239,7 @@ p
   overflow:auto;
   max-height:calc(100% - 40px);
 }
-.container h1
+.container .info h1
 {
   text-align:center;
   font-family: "Averia Sans Libre", Helvetica, sans-serif;
@@ -321,10 +321,6 @@ p
   background:#dc7328;
   border-radius:50px;
   width:5px;
-}
-.echo, .echo li
-{
-  list-style:circle;
 }
 h1 a
 {
