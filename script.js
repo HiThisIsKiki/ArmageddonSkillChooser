@@ -51,10 +51,10 @@ skills = {
     twohanded:"Two handed"
   },
   weapons:{
-    bludgeoningweapons:"Bludgeoning weapons", 
-    choppingweapons:"Chopping weapons",
-    piercingweapons:"Piercing weapons",
-    slashingweapons:"Slashing weapons"
+    bludgeoningweapons:"Bludgeoning", 
+    choppingweapons:"Chopping",
+    piercingweapons:"Piercing",
+    slashingweapons:"Slashing"
   },
   stealth:{
     climb:"Climb",
@@ -687,7 +687,8 @@ subguilds = {
     brew:[skmaster,"bandage"],
     forage:[skadvanced],
     bandagemaking:[skmaster],
-    floristry:[skmaster]
+    floristry:[skmaster],
+    custom:[yes]
   }),
   berserker:new skillSet({
     karma:[2],
@@ -750,13 +751,15 @@ subguilds = {
     armorrepair:[skmaster],
     haggle:[skadvanced],
     leatherworking:[skmaster],
-    armormaking:[skmaster]
+    armormaking:[skmaster],
+    custom:[yes]
   }),
   masterchef:new skillSet({
     karma:[1],
     cooking:[skmaster],
     skinning:[skmaster],
-    haggle:[skadvanced]
+    haggle:[skadvanced],
+    custom:[yes]
   }),
   mastercrafter:new skillSet({
     karma:[1],
@@ -764,7 +767,8 @@ subguilds = {
     stonecrafting:[skmaster],
     haggle:[skadvanced],
     tanning:[skadvanced],
-    dyeing:[skadvanced]
+    dyeing:[skadvanced],
+    custom:[yes]
   }),
   masterjeweler:new skillSet({
     karma:[1],
@@ -772,21 +776,24 @@ subguilds = {
     stonecrafting:[skadvanced],
     haggle:[skadvanced],
     featherworking:[skadvanced],
-    value:[skjourneyman]
+    value:[skjourneyman],
+    custom:[yes]
   }),
   masterpotter:new skillSet({
     karma:[1],
     haggle:[skadvanced],
     dyeing:[skmaster],
     clayworking:[skmaster],
-    value:[skjourneyman]
+    value:[skjourneyman],
+    custom:[yes]
   }),
   mastertailor:new skillSet({
     karma:[1],
     haggle:[skadvanced],
     tanning:[skadvanced],
     dyeing:[skadvanced],
-    clothworking:[skmaster]
+    clothworking:[skmaster],
+    custom:[yes]
   }),
   mastertrader:new skillSet({
     karma:[1],
@@ -832,6 +839,54 @@ subguilds = {
     scan:[skadvanced,'watch'],
     hidecity:[skadvanced,'sneakcity']
   }),
+  roughrider:new skillSet({
+    karma:[2],
+    ride:[skadvanced],
+    charge:[skadvanced],
+    hitchdouble:[yes],
+    tamemount:[yes]
+  }),
+  reaver:new skillSet({
+    karma:[2],
+    choppingweapons:[skadvanced],
+    hack:[skadvanced],
+    disarm:[skadvanced],
+    shielduse:[skadvanced],
+    armorrepair:[skadvanced]
+  }),
+  wastelander:new skillSet({
+    karma:[1],
+    directionsense:[skadvanced],
+    bendune:[yes],
+    foragefoodwild:[yes],
+    wildquit:[yes],
+  }),
+  swordsman:new skillSet({
+    karma:[2],
+    slashingweapons:[skadvanced],
+    parry:[skadvanced],
+    watch:[skadvanced],
+    riposte:[skadvanced,'parry'],
+  }),
+  masterwoodworker:new skillSet({
+    karma:[1],
+    axemaking:[skmaster],
+    clubmaking:[skmaster],
+    woodworking:[skmaster],
+    haggle:[skadvanced],
+    lumberjacking:[skadvanced],
+    custom:[yes]
+  }),
+  marksman:new skillSet({ //eThey can achieve mastery in fletchery, and by practicing this can learn to craft their own weapons with bow making, achieving mastery in this area as well. They are able to custom craft both their weapons and ammunition, creating pieces tuned to the needs of the owner.
+    karma:[1],
+    archery:[skadvanced],
+    blowgunuse:[skadvanced],
+    crossbowuse:[skadvanced],
+    slinguse:[skadvanced],
+    fletchery:[skmaster],
+    bowmaking:[skmaster,'fletchery'],
+    custom:[yes]
+  }),
   slipknife:new skillSet({
     karma:[1],
     hidecity:[skadvanced],
@@ -847,7 +902,8 @@ subguilds = {
     fletchery:[skmaster],
     swordmaking:[skmaster],
     knifemaking:[skmaster],
-    spearmaking:[skmaster]
+    spearmaking:[skmaster],
+    custom:[yes]
   })
 }
 function skillSet(skilllist)
