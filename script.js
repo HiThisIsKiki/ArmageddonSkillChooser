@@ -131,8 +131,8 @@ skills = {
     
     custom:"Custom Crafting",
 
-    foragefoodcity:"Forage for food in the wilderness",
-    foragefoodwild:"Forage for scraps in cities",
+    foragefoodwild:"Forage for food in the wilderness",
+    foragefoodcity:"Forage for scraps in cities",
     
     recovery:"Fair recovery from exertion",
     goodrecovery:"Good recovery from exertion",
