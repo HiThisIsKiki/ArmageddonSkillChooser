@@ -1146,7 +1146,15 @@ function keyCheck(e)
     var keywords = e.target.value;
     keywords = keywords.split(' ');
     keywords = keywords.filter((item)=> item.length>0);        
-    listSuggestions(keywords);;
+    //Sanity check
+    if (keywords.length > 150)
+    {
+      $('.suggestions').html("You seem to have entered over 150 keywords. That's more skills than are in the game. Why would you even do that? Bad.")
+    }
+    else
+    {      
+      listSuggestions(keywords);;
+    }
   }
   else if (e.which == 9)
   {
