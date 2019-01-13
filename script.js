@@ -101,8 +101,7 @@ skills = {
     clayworking:"Clayworking",
     clothworking:"Clothworking",
     clubmaking:"Club making",
-    cooking:"Cooking",
-    custom:"Custom Crafting",
+    cooking:"Cooking",   
     dyeing:"Dyeing",
     featherworking:"Featherworking", 
     fletchery:"Fletchery",
@@ -130,6 +129,8 @@ skills = {
   special:{
     languagebonus:"Adept at picking up new languages",
     
+    custom:"Custom Crafting",
+
     foragefoodcity:"Forage for food in the wilderness",
     foragefoodwild:"Forage for scraps in cities",
     
