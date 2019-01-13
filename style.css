@@ -5,6 +5,8 @@
 
 html,body
 {
+  width:100%;
+  height:100%;
   margin:0;
   padding:0;
 }
@@ -25,6 +27,7 @@ p
 }
 .levelname
 {
+  cursor:default;
   font-family:Graduate;
   position: absolute;
   left: 50%;
@@ -52,11 +55,16 @@ p
   text-align:center;
   border-bottom: 2px solid #323232;
 }
+#showchar section
+{
+  padding:10px;
+}
 #showchar #skills section h1
 {
   font-family:'Averia Sans Libre', sans-serif;
   font-size: 2.4em;
   text-align:center;
+  padding:10px;
 }
 #charName span{
   font-size:0.5em;
@@ -155,6 +163,17 @@ p
   width:100%;
   text-align:left;
 }
+.sourcetext
+{
+  position:absolute;
+  right:0;
+  bottom:0;
+  font-size: 0.8em;
+  padding:0;
+  margin:0;
+  width:100%;
+  text-align:right;
+}
 .keywords
 {
   text-align:center;
@@ -179,22 +198,21 @@ p
 }
 .suggestions
 {
-  text-align:center;
+  text-align:left;
   width:60%;
   margin:0 auto;
 }
 .suggestions a
 {
+  width:100%;
   display:inline-block;
-  padding:10px;
-  text-align:center;
+  padding:10px 0;
   position:relative;
   margin:5px;
   font-weight:bold;  
   color: #dc7328;
   text-decoration: none;
   cursor:pointer;
-  text-shadow:black;
 }
 .suggestions a:hover
 {
@@ -203,13 +221,115 @@ p
 .suggestions a:visited{
   color: #dc7328;
 }
-.suggestions a p
+.suggestions a span
 {
   padding:0;
   margin:0;
   padding-right:10px;
-  display:inline-block;
   color:black;
-  height:15px;
-  width:15px;  
+  font-size:0.8em; 
+  position:relative;
+  top:5px;
+}
+.chooseskills
+{
+  text-align:center;
+  padding:20px;
+  width:auto;
+  overflow:auto;
+  max-height:calc(100% - 40px);
+}
+.container h1
+{
+  text-align:center;
+  font-family: "Averia Sans Libre", Helvetica, sans-serif;
+  font-size:3em;  
+  color: black;
+  padding:20px;  
+}
+.container p
+{
+  text-align:center;
+}
+.chooseskills h1:first-child
+{
+  padding-top:0;
+}
+.info
+{
+  padding-bottom: 30px;
+  border-bottom:1px solid #5a4838;
+}
+.chooseskills h1
+{
+  font-family: "Averia Sans Libre", Helvetica, sans-serif;
+  font-size:1.8em;
+  padding: 30px;
+  color: black;
+  display:block;
+  margin:0 auto;
+}
+.sidebar
+{
+  float:right;
+  background: #5a4838;
+  width:25%;
+  height:100%; 
+  text-align:center;
+  color:white;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+.sidebar h1
+{
+  font-family: "Averia Sans Libre", Helvetica, sans-serif;
+  font-size:1.8em;
+  padding: 30px;
+}
+.container
+{
+  width:100%;
+  height:100%;
+}
+.skillToggle
+{
+  margin:10px;
+  display:inline-block;
+  border-radius:5px;
+  padding:5px;
+  font-family:"Righteous",Helvetica, sans-serif;
+  border:3px solid #5a4838;
+  color: #5a4838;
+  cursor:pointer;
+}
+.skillToggle.on
+{
+  background:#5a4838;
+  color:white;
+}
+::-webkit-scrollbar             
+{
+  display:none;
+}
+.sidebar::-webkit-scrollbar             
+{
+  display:inline;
+  width:10px;
+}
+.sidebar::-webkit-scrollbar-thumb  
+{
+  background:#dc7328;
+  border-radius:50px;
+  width:5px;
+}
+.echo, .echo li
+{
+  list-style:circle;
+}
+h1 a
+{
+  display:block;
+  font-size:0.5em;
+  color:#dc7328;
+  cursor:pointer;
 }

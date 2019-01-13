@@ -20,134 +20,127 @@ skills = {
   misc:{
     karma:"Karma"
   },
-  combat:{
-    archery:"Archery",
-    throw:"Throw",
-    crossbowuse:"Crossbows",
-    slinguse:"Sling use",
-    blowgunuse:"Blowguns",
-
-    parry:"Parry",
-    dualwield:"Dual wield",
-    twohanded:"Two handed",
-    blindfighting:"Blind fighting",
-    kick:"Kick",
-    bash:"Bash",
-    disarm:"Disarm",
-    subdue:"Subdue"
-  },
-  weapons:{
-    piercingweapons:"Piercing weapons",
-    slashingweapons:"Slashing weapons",
-    choppingweapons:"Chopping weapons",
-    bludgeoningweapons:"Bludgeoning weapons",
-
-    tridentweapons:"Trident weapons",
-    knifeweapons:"Knife weapons",
-    razorweapons:"Razor weapons",
-    polearmweapons:"Polearm weapons",
-    pikeweapons:"Pike weapons",
-
-    hack:"Hack",
-    riposte:"Riposte",
-
-  },
-  utility:{
-    ride:"Ride",
-	  charge:"Charge",
-    skinning:"Skinning",
-    directionsense:"Direction sense",
-    huntwild:"Hunt (Wild)",
-    huntcity:"Hunt (City)",    
-    climb:"Climb",
-    forage:"Forage"
-  },
-  defending:
-  {
-    rescue:"Rescue",
-    guarding:"Guard",
-    shielduse:"Shield use",
-    flee:"Flee",
-    threaten:"Threaten"
-  },
-  healing:{
-    brew:"Brew",
-    bandage:"Bandage",
-    bandagemaking:"Bandagemaking"
-  },
-  criminal:{
-    hidecity:"Hide (City)",
-    sneakcity:"Sneak (City)",
-    hidewild:"Hide (Wild)",
-    sneakwild:"Sneak (Wild)",
-    listen:"Listen",
-    scan:"Scan",
-    watch:"Watch",
-    backstab:"Backstab",
-    sap:"Sap",
-    pick:"Pick",
-    pickmaking:"Pick making",
-    sleightofhand:"Sleight of hand",
-    poisoning:"Poisoning",
-    steal:"Steal",
-    peek:"Peek",
-    search:"Search"
-  },
-  crafting:{
-    custom:"Custom Crafting",
-    fletchery:"Fletchery",
-    tanning:"Tanning",
-    cooking:"Cooking",
-    dyeing:"Dyeing",
-    featherworking:"Featherworking",
-    floristry:"Floristry",
-    leatherworking:"Leatherworking",
-    tentmaking:"Tent making",
-    armorrepair:"Armor Repair",
-    armormaking:"Armor Making",
-    basketweaving:"Basket weaving",
-    stonecrafting:"Stonecrafting",
-    jewelrymaking:"Jewelrymaking",
-    toolmaking:"Toolmaking",
-    instrumentmaking:"Instrument making",
-    bowmaking:"Bow making",
-    knifemaking:"Knife making",
-    swordmaking:"Sword making",
-    spearmaking:"Spear making",
-    lumberjacking:"Lumberjacking",
-    woodworking:"Woodworking",
-    wagonmaking:"Wagonmaking",
-    clubmaking:"Club making",
-    axemaking:"Axe making",
-    clayworking:"Clayworking",
-    clothworking:"Clothworking"
-  },
-  merchant:{
-    pilot:"Pilot",
-    haggle:"Haggle",
-    value:"Value"
-  },
-  languages:{
-    cavilish:"Cavilish",
-    bendune:"Bendune",
-    allundean:"Allundean",
-    mirukkim:"Mirukkim",
-  },
   psionics:{
     contact:'Contact',
     barrier:'Barrier',
     expel:"Expel"
   },
+  combat:{
+    archery:"Archery",
+    backstab:"Backstab",
+    bash:"Bash",
+    blindfighting:"Blind fighting",
+    blowgunuse:"Blowguns",
+    charge:"Charge",
+    crossbowuse:"Crossbows",
+    disarm:"Disarm",
+    dualwield:"Dual wield",
+    flee:"Flee",
+    guarding:"Guard",
+    hack:"Hack",
+    kick:"Kick",
+    parry:"Parry",
+    rescue:"Rescue",
+    riposte:"Riposte",
+    sap:"Sap",
+    slinguse:"Sling use",
+    shielduse:"Shield use",
+    subdue:"Subdue",
+    throw:"Throw",
+    threaten:"Threaten", 
+    twohanded:"Two handed"
+  },
+  weapons:{
+    bludgeoningweapons:"Bludgeoning weapons", 
+    choppingweapons:"Chopping weapons",
+    piercingweapons:"Piercing weapons",
+    slashingweapons:"Slashing weapons"
+  },
+  stealth:{
+    climb:"Climb",
+    hidecity:"Hide (City)",
+    hidewild:"Hide (Wild)",
+    sneakcity:"Sneak (City)",    
+    sneakwild:"Sneak (Wild)",
+  },
+  manipulation:{
+    bandage:"Bandage",
+    pick:"Pick",
+    pilot:"Pilot",
+    poisoning:"Poisoning",
+    ride:"Ride",    	  
+    skinning:"Skinning",
+    sleightofhand:"Sleight of hand",
+    steal:"Steal"
+  },
+  perception:{
+    directionsense:"Direction sense",
+    forage:"Forage",
+    huntwild:"Hunt (Wild)",
+    huntcity:"Hunt (City)",
+    listen:"Listen",
+    peek:"Peek",
+    scan:"Scan",
+    search:"Search",
+    watch:"Watch",
+  },
+  languages:{
+    allundean:"Allundean",
+    bendune:"Bendune",
+    cavilish:"Cavilish",
+    mirukkim:"Mirukkim",
+  }, 
+   crafting:{
+    armormaking:"Armor Making",
+    armorrepair:"Armor Repair",
+    axemaking:"Axe making",
+    bandagemaking:"Bandagemaking",
+    basketweaving:"Basket weaving",
+    bowmaking:"Bow making",
+    brew:"Brew",
+    clayworking:"Clayworking",
+    clothworking:"Clothworking",
+    clubmaking:"Club making",
+    cooking:"Cooking",
+    custom:"Custom Crafting",
+    dyeing:"Dyeing",
+    featherworking:"Featherworking", 
+    fletchery:"Fletchery",
+    floristry:"Floristry",    
+    knifemaking:"Knife making",
+    instrumentmaking:"Instrument making",    
+    jewelrymaking:"Jewelrymaking",    
+    leatherworking:"Leatherworking",
+    lumberjacking:"Lumberjacking",
+    pickmaking:"Pick making",
+    stonecrafting:"Stonecrafting",  
+    spearmaking:"Spear making",
+    swordmaking:"Sword making",
+    tanning:"Tanning",
+    tentmaking:"Tent making",
+    toolmaking:"Toolmaking",   
+    wagonmaking:"Wagonmaking",  
+    woodworking:"Woodworking",
+  },
+  barter:{
+    haggle:"Haggle",
+    value:"Value"    
+  },
+
   special:{
+    
     foragefoodcity:"Forage for food in the wilderness",
     foragefoodwild:"Forage for scraps in cities",
-    hitchdouble:"Hitch two mounts",
-    wildquit:"Wilderness quit",
+    
     recovery:"Fair recovery from exertion",
     goodrecovery:"Good recovery from exertion",
-    tamemount:"May eventually tame mounts",
+    
+
+    hitchdouble:"Hitch two mounts",
     alcoholtolerance:"Increased tolerance for alcohol",
-    paintolerance:"Increased tolerance for pain"
+    paintolerance:"Increased tolerance for pain",
+    tamemount:"May eventually tame mounts",
+    wildquit:"Wilderness quit",
   }
 }
 skillRef = {};
@@ -720,12 +713,13 @@ subguilds = {
   }),
   grebber:new skillSet({
     karma:[1],
-    huntwild:[skmaster],
-    huntcity:[skmaster],
-    forage:[skmaster],
+    huntwild:[skadvanced],
+    huntcity:[skadvanced],
+    forage:[skadvanced],
     ride:[skadvanced],
     directionsense:[skadvanced],
-    climb:[skjourneyman,'huntcity']
+    search:[skadvanced,'forage'],
+    climb:[skadvanced,'huntcity']
   }),
   bruiser:new skillSet({
     karma:[2],
@@ -835,8 +829,8 @@ subguilds = {
   }),
   slipknife:new skillSet({
     karma:[1],
-    hidecity:[skmaster],
-    sneakcity:[skmaster],
+    hidecity:[skadvanced],
+    sneakcity:[skadvanced],
     backstab:[skadvanced],
     poisoning:[skadvanced],
     throw:[skjourneyman,'hidecity'],
@@ -927,9 +921,27 @@ function guildUnpack(name,template)
   }
   guilds[name] = new skillSet(newguild);
 }
+function populateCharPage()
+{
+  $("#showchar").append('<div id="skills"></div>')
+  for (let i in skills)
+  {    
+    var title = pretty(i);
+    var section = $("<section class="+i+"></section>")
+    if (title != 'Misc')
+    {
+      section.append('<h1>'+title+"</h1>");
+      section.append('<div class="skilllist">Nothing!</div>')
+    }
+    $("#skills").append(section)  
+  }  
+}
 function showChar(name)
 {
+  populateCharPage();
+
   $("#showchar").removeClass("hide");
+  $(".container").addClass("hide");
   $("#charName").html(name);
 
   var spl = name.toLowerCase().split("/");
@@ -945,14 +957,14 @@ function showChar(name)
 
     }
     else {
-      addSkill(guild[i])
+      addSkill(guild[i],'class')
     }
   }
   for (var i in guild)
   {
     if (guild[i].branched)
     {
-      addSkill(guild[i])
+      addSkill(guild[i],'class')
     }
   }
   for (var i in subguild)
@@ -962,18 +974,18 @@ function showChar(name)
 
     }
     else {
-      addSkill(subguild[i])
+      addSkill(subguild[i],'subclass')
     }
   }
   for (var i in subguild)
   {
     if (subguild[i].branched)
     {
-      addSkill(subguild[i])
+      addSkill(subguild[i],'subclass')
     }
   }
 }
-function addSkill(skill) //Skill {category, name, max,[branched]}
+function addSkill(skill, source) //Skill {category, name, max,[branched]}
 { 
   //Is this karma?
   if (skill.name == "Karma")
@@ -985,13 +997,33 @@ function addSkill(skill) //Skill {category, name, max,[branched]}
   var check = $('.skillcontainer[name="'+skill.name.toLowerCase().replace(' ','')+'"]');
   if (check.length > 0)
   {
-    //Correct branching
+    let skillname = skill.name.toLowerCase().replace(' ','');
+    console.log(skill,source);
+    //Skill is in already.
+    //Check if we need to update the source.
+    if ( $('.skillcontainer[name="'+skillname+'"] .sourcetext').html() != source ){
+      //We do. Set this to branched by both.
+      $('.skillcontainer[name="'+skillname+'"] .sourcetext').html('(both)');
+    }
+    //Is it branched?
     if (skill.branched)
     {
 
+        //This version is branched, is the original branched?
+        if ($('.skillcontainer[name="'+skillname+'"]').hasClass('branched'))
+        {
+          //Two things branch this skill, we'll adjust the max, then add it to the label saying what branches it.
+          //Display the level overlaid over the bar
+          let level = levelText[skill.max];
+          level = level.toUpperCase();
+          $('.skillcontainer[name="'+skillname+'"].branched .levelname').html(level);
+          $('.skillcontainer[name="'+skillname+'"].branched .branchtext').append(' / '+pretty(skill.branched));
+
+        }        
     }
     else {      
-        $('.skillcontainer[name="'+skill.name.toLowerCase().replace(' ','')+'"].branched').removeClass('branched');
+        //This version isn't branched, if the original is branched, it now isn't.
+        $('.skillcontainer[name="'+skillname+'"].branched').removeClass('branched');
     }
   }
   else {
@@ -1012,7 +1044,7 @@ function addSkill(skill) //Skill {category, name, max,[branched]}
     skilltext.append(skill.name)
     bar.append(barcontents)
 
-    //Check if this is a 'all or nothing' skill.
+    //Check if this is an 'all or nothing' skill.
     if (skill.max == yes)
     {
       barcontents.css('width','100%');
@@ -1026,21 +1058,27 @@ function addSkill(skill) //Skill {category, name, max,[branched]}
     bar.attr('value',skill.max)
     bar.attr('start',skill.start)
 
+    //Display the level overlaid over the bar
     let level = levelText[skill.max];
     level = level.toUpperCase();
     bar.append('<span class="levelname">'+level+'</span>')
 
     container.append(skilltext);
     container.append(bar);
-    //First check for branching
+
+    //Where does this come from?
+    skilltext.append('<p class="sourcetext">('+source+')</p>')
+
+    //Check if this is the first skill of this type
     if ($('#skills .'+skill.category+' .skilllist .skillcontainer').length == 0)
     {
       $('#skills .'+skill.category+' .skilllist').html('');
     }
+    //First check for branching
     if (skill.branched)
     {
       container.addClass('branched');
-      skilltext.append('<p class="branchtext">'+skill.branched +'</p>')
+      skilltext.append('<p class="branchtext">'+pretty(skill.branched) +'</p>')      
 
       $('#skills .'+skill.category+' .skilllist').append(container);
     }
@@ -1084,20 +1122,52 @@ function getCategory(skillname)
   return category;
 }
 
+let keywords = {};
 $(document).ready(function(){
-  $('.keywords input').keydown(keyCheck)
-  $('.keywords input').keyup(suggestCheck);
   var url = window.location.href;
   var param = url.split('?')[1];
   if (param === undefined || param.indexOf('/') == -1)
   {
     //Open normal page
+    populateSkills();
+    $('.skillToggle').click(skillToggleClick);
   }
   else {
     showChar(param);
     $('.keywords, .suggestions, .classSelect').addClass('hide')
   }
 })
+function populateSkills()
+{
+  var sections = $('.chooseskills section');
+  for (let i in skills)
+  {
+    var title = pretty(i);
+    if (title != 'Misc') $('.chooseskills').append('<h1>'+title+"</h1>");
+    for (let j in skills[i])
+    {
+      if (j != 'karma')
+      {
+        $('.chooseskills').append('<div class="skillToggle" name="'+j+'">'+skills[i][j]+'</div>')        
+      }
+    }
+  }
+}
+function skillToggleClick(e)
+{
+  var button = $(e.target);
+  button.toggleClass('on');
+  if (button.hasClass('on'))
+  {
+    keywords[button.attr('name')] = true;
+  }
+  else
+  {
+    delete keywords[button.attr('name')];
+  }
+  $('.sidebar').animate({scrollTop:0},0);
+  listSuggestions(Object.keys(keywords));
+}
 function suggest(str)
 {
   let arr = str.split(' ');
@@ -1126,50 +1196,19 @@ function suggest(str)
     $('.keyword').click(keywordClicked);
   }
 }
-function keywordClicked(e){
-  var str = e.target.innerHTML;
-  var inn = $('.keywords input').val();
-  var arr = inn.split(" ");
-  var excludeLast = arr.slice(0,arr.length-1).join(" ");
-  $('.keywords input').val(excludeLast+' '+str+' ')
-  suggest($('.keywords input').val());
-  $('.keywords input').focus()
-}
 function suggestCheck(e)
 {
   suggest(e.target.value);
 }
-function keyCheck(e)
-{
-  if (e.which == 13)
-  {
-    var keywords = e.target.value;
-    keywords = keywords.split(' ');
-    keywords = keywords.filter((item)=> item.length>0);        
-    //Sanity check
-    if (keywords.length > 150)
-    {
-      $('.suggestions').html("You seem to have entered over 150 keywords. That's more skills than are in the game. Why would you even do that? Bad.")
-    }
-    else
-    {      
-      listSuggestions(keywords);;
-    }
-  }
-  else if (e.which == 9)
-  {
-    e.preventDefault();
-    let keywords = $('.keyword');
-    if (keywords.length !=0)
-    {
-      $(keywords[0]).click();
-    }
-  }
-}
 function listSuggestions(keywords)
-{
+{  
   var toAdd = [];
-  $('.suggestions').html('')
+  if (keywords.length == 0)
+  {
+    $('.suggestions').html('Choose some skills on the left!');
+    return;
+  }
+  $('.suggestions').html('')  
   for (var i in guilds)
   {
     for (var j in subguilds)
@@ -1194,18 +1233,22 @@ function listSuggestions(keywords)
         //Check for karma
         if (subguilds[j] && subguilds[j].karma)
         {
-          link.append('<p>('+subguilds[j].karma.max+'K)</p>')
-          toAdd.push(link)
+          link.append('<span>'+subguilds[j].karma.max+'K</span>')
+          toAdd.push([link,subguilds[j].karma.max])
         }
         else {
-          $('.suggestions').append(link);
+          toAdd.push([link,0]);
         }        
       }
     }
   }
+  toAdd = toAdd.sort(function(one,two){
+    return (one[1] - two[1]);
+  });
+  console.log(toAdd);
   for (var i in toAdd)
   {
-    $('.suggestions').append(toAdd[i]);
+    $('.suggestions').append(toAdd[i][0]);
   }
   if ($('.suggestions a').length == 0 )
   {
@@ -1215,4 +1258,11 @@ function listSuggestions(keywords)
 function pretty(str)
 {
   return str[0].toUpperCase()+str.substring(1,str.length);
+}
+function reset()
+{
+  $('.on').removeClass("on");
+  keywords= {};
+  listSuggestions(Object.keys(keywords))
+  $('.suggestions').html('Choose some skills on the left!');
 }
