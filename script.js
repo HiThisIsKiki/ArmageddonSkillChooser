@@ -78,7 +78,8 @@ skills = {
     forage:"Forage",
     huntwild:"Hunt (Wild)",
     huntcity:"Hunt (City)",
-    listen:"Listen",
+    listenwild:"Listen (Wild)",
+    listencity:"Listen (City)",
     peek:"Peek",
     scan:"Scan",
     search:"Search",
@@ -173,7 +174,7 @@ guildtemplate = {
   infiltrator:{
     yes:["foragefoodcity"],
     master:["contact", 'barrier', 'backstab', 'crossbowuse', 'throw', 'dualwield', 'twohanded'],
-    advanced:["flee","parry","sap","shielduse","slashingweapons","piercingweapons","choppingweapons","bludgeoningweapons","sneakcity","hidecity","climb","poisoning","sleightofhand","huntcity","listen","search","watch","forage","value","cooking"],
+    advanced:["flee","parry","sap","shielduse","slashingweapons","piercingweapons","choppingweapons","bludgeoningweapons","sneakcity","hidecity","climb","poisoning","sleightofhand","huntcity","listencity","search","watch","forage","value","cooking"],
     journeyman:[],
     exmaster:["expel","blowgunuse"],
     exadvanced:["bash","blindfighting","pick","peek","scan"],
@@ -192,7 +193,7 @@ guildtemplate = {
   },
   miscreant:{
     yes:["foragefoodcity"],
-    master:["contact","barrier","sneakcity","hidecity","climb","pick","poisoning","sleightofhand","steal","huntcity","listen","peek","scan","search","watch","forage"],
+    master:["contact","barrier","sneakcity","hidecity","climb","pick","poisoning","sleightofhand","steal","huntcity","listencity","peek","scan","search","watch","forage"],
     advanced:["crossbowuse","flee","parry","throw","shielduse","dualwield","twohanded","piercingweapons","bludgeoningweapons","cooking"],
     journeyman:[],
     exmaster:["expel"],
@@ -212,7 +213,7 @@ guildtemplate = {
   },
   pilferer:{
     master:["contact","barrier","value","clothworking","dyeing","knifemaking","stonecrafting","toolmaking","cooking"],
-    advanced:["crossbowuse","throw","dualwield","twohanded","hidecity","climb","steal","huntcity","listen","peek","scan","watch","forage","pickmaking"],
+    advanced:["crossbowuse","throw","dualwield","twohanded","hidecity","climb","steal","huntcity","listencity","peek","scan","watch","forage","pickmaking"],
     journeyman:["flee","shielduse","piercingweapons","bludgeoningweapons"],
     exmaster:["expel","sleightofhand","haggle","bowmaking","brew","clayworking","clubmaking","fletchery","jewelrymaking"],
     exadvanced:["sneakcity","pick","search"],
@@ -239,12 +240,12 @@ guildtemplate = {
     advanced:["sneakcity","hidecity","peek"],
     journeyman:["shielduse","dualwield","twohanded","forage"],
     exmaster:["expel","armormaking","armorrepair","bandagemaking","brew","clubmaking","featherworking","jewelrymaking","leatherworking","pickmaking","spearmaking","swordmaking"],
-    exadvanced:["poisoning","sleightofhand","steal","listen"],
+    exadvanced:["poisoning","sleightofhand","steal","listencity"],
     exjourneyman:["piercingweapons","crossbowuse"],
     branching:{
       expel:"barrier",
       steal:"peek",
-      listen:"sneakcity",
+      listencity:"sneakcity",
       leatherworking:"tanning",
       armormaking:"leatherworking",
       armorrepair:"armormaking",
@@ -265,7 +266,7 @@ guildtemplate = {
   raider:{
     yes:["hitchdouble"],
     master:["contact","barrier","archery","bash","flee","kick","parry","rescue","slinguse","threaten","shielduse","dualwield","twohanded","slashingweapons","piercingweapons","choppingweapons","bludgeoningweapons"],
-    advanced:["subdue","climb","listen","ride","directionsense"],
+    advanced:["subdue","climb","listenwild","ride","directionsense"],
     journeyman:["forage","cooking"],
     exmaster:["expel","blindfighting","crossbowuse","charge","disarm","guarding","throw"],
     exadvanced:["sneakwild","hidewild","scan"],
@@ -286,7 +287,7 @@ guildtemplate = {
   scout:{
     yes:['tamemount','wildquit','hitchdouble','foragefoodwild','recovery'],
     master:["contact","barrier","archery","slinguse","throw","dualwield","twohanded","skinning"],
-    advanced:["flee","parry","shielduse","slashingweapons","piercingweapons","choppingweapons","bludgeoningweapons","climb","bandage","poisoning","ride","directionsense","huntwild","listen","scan","forage","fletchery","cooking"],
+    advanced:["flee","parry","shielduse","slashingweapons","piercingweapons","choppingweapons","bludgeoningweapons","climb","bandage","poisoning","ride","directionsense","huntwild","listenwild","scan","forage","fletchery","cooking"],
     journeyman:[],
     exmaster:["expel","blowgunuse","crossbowuse","guarding","rescue"],
     exadvanced:["blindfighting","charge","kick","sneakwild","hidewild","bandagemaking"],
@@ -307,7 +308,7 @@ guildtemplate = {
   },
   stalker:{
     yes:["foragefoodwild",'wildquit','goodrecovery','hitchdouble','tamemount'],
-    master:["contact","barrier","sneakwild","hidewild","climb","bandage","poisoning","skinning","ride","directionsense","huntwild","listen","scan","watch","forage"],
+    master:["contact","barrier","sneakwild","hidewild","climb","bandage","poisoning","skinning","ride","directionsense","huntwild","listenwild","scan","watch","forage"],
     advanced:["archery","crossbowuse","flee","parry","throw","shielduse","dualwield","twohanded","piercingweapons","bludgeoningweapons","cooking"],
     journeyman:[],
     exmaster:['expel'],
@@ -331,7 +332,7 @@ guildtemplate = {
   adventurer:{
     yes:["wildquit",'recovery','hitchdouble','tamemount'],
     master:["contact","barrier","pilot","skinning","armorrepair","bandagemaking","fletchery","lumberjacking","spearmaking","toolmaking","cooking"],
-    advanced:["archery","dualwield","twohanded","sneakwild","climb","ride","directionsense","huntwild","listen","scan","forage"],
+    advanced:["archery","dualwield","twohanded","sneakwild","climb","ride","directionsense","huntwild","listenwild","scan","forage"],
     journeyman:["flee","shielduse","piercingweapons","bludgeoningweapons"],
     exmaster:["expel","brew","bowmaking","floristry","knifemaking","leatherworking","tanning","tentmaking"],
     exadvanced:["crossbowuse","rescue","hidewild","bandage","search"],
@@ -359,11 +360,11 @@ guildtemplate = {
     advanced:["skinning","ride","directionsense","scan"],
     journeyman:["shielduse","dualwield","twohanded","forage"],
     exmaster:["expel","armormaking","armorrepair","bandagemaking","brew","clothworking","clubmaking","featherworking","floristry","instrumentmaking","jewelrymaking","knifemaking","leatherworking","stonecrafting","tanning","woodworking"],
-    exadvanced:["listen"],
+    exadvanced:["listenwild"],
     exjourneyman:["archery","crossbowuse","piercingweapons"],
     branching:{
       expel:"barrier",
-      listen:"scan",
+      listenwild:"scan",
       tanning:"skinning",
       featherworking:"skinning",
       leatherworking:"skinning",
@@ -387,7 +388,7 @@ guildtemplate = {
   fighter:{
     yes:["alcoholtolerance"],
     master:["contact","barrier","bash","crossbowuse","disarm","flee","guarding","hack","kick","parry","rescue","riposte","slinguse","shielduse","dualwield","twohanded","slashingweapons","piercingweapons","choppingweapons","bludgeoningweapons"],
-    advanced:["subdue","listen"],
+    advanced:["subdue","listencity"],
     journeyman:["forage","cooking"],
     exmaster:["expel","archery","blindfighting","threaten","throw"],
     exadvanced:["bandage","armorrepair"],
@@ -396,7 +397,7 @@ guildtemplate = {
       expel:"barrier",
       bandage:"parry",
       blindfighting:"parry",
-      watch:"listen",
+      watch:"listencity",
       threaten:"guarding",
       armorrepair:"shielduse",
       archery:"crossbowuse",
@@ -406,7 +407,7 @@ guildtemplate = {
   soldier:{
     yes:['alcoholtolerance','paintolerance'],
     master:["contact","barrier","crossbowuse","guarding","rescue","slinguse","dualwield","twohanded"],
-    advanced:["bash","flee","kick","parry","shielduse","slashingweapons","piercingweapons","choppingweapons","bludgeoningweapons","bandage","listen","forage","armorrepair","bandagemaking","fletchery","cooking"],
+    advanced:["bash","flee","kick","parry","shielduse","slashingweapons","piercingweapons","choppingweapons","bludgeoningweapons","bandage","listencity","forage","armorrepair","bandagemaking","fletchery","cooking"],
     journeyman:["subdue"],
     exmaster:['expel',"archery","hack","riposte"],
     exadvanced:["disarm","watch","axemaking","clubmaking","knifemaking","spearmaking","swordmaking"],
@@ -414,7 +415,7 @@ guildtemplate = {
     branching:{
       expel:"barrier",
       disarm:"parry",
-      watch:"listen",
+      watch:"listencity",
       riposte:"slashingweapons",
       hack:"choppingweapons",
       knifemaking:"fletchery",
@@ -427,7 +428,7 @@ guildtemplate = {
   },
   laborer:{
     yes:['alcoholtolerance','paintolerance'],
-    master:["contact","barrier","bandage","listen","scan","watch","forage"],
+    master:["contact","barrier","bandage","listencity","scan","watch","forage"],
     advanced:["crossbowuse","flee","guarding","kick","parry","rescue","slinguse","shielduse","dualwield","twohanded","slashingweapons","piercingweapons","choppingweapons","bludgeoningweapons","armorrepair","bandagemaking","fletchery","knifemaking","lumberjacking","toolmaking","cooking"],
     journeyman:[],
     exmaster:["expel"],
@@ -451,7 +452,7 @@ guildtemplate = {
   },
   craftsperson:{
     master:["contact","barrier","pilot","value","armormaking","bandagemaking","clothworking","dyeing","fletchery","knifemaking","lumberjacking","stonecrafting","toolmaking","woodworking","cooking"],
-    advanced:["crossbowuse","slinguse","dualwield","twohanded","listen","watch","forage"],
+    advanced:["crossbowuse","slinguse","dualwield","twohanded","listencity","watch","forage"],
     journeyman:["flee","kick","shielduse","slashingweapons","piercingweapons","choppingweapons","bludgeoningweapons"],
     exmaster:["expel","haggle","armorrepair","axemaking","basketweaving","clayworking","clubmaking","jewelrymaking","leatherworking","spearmaking","swordmaking","tanning","tentmaking"],
     exadvanced:["bandage"],
@@ -533,7 +534,7 @@ subguilds = {
   }),
   bard:new skillSet({
     languagebonus:[yes],
-    listen:[skjourneyman],
+    listencity:[skjourneyman],
     sleightofhand:[skadvanced],
     haggle:[skjourneyman],
     watch:[skjourneyman],
@@ -595,7 +596,7 @@ subguilds = {
     floristry:[skadvanced],
     cooking:[skadvanced],
     hidecity:[skadvanced],
-    listen:[skjourneyman]
+    listencity:[skjourneyman]
   }),
   hunter:new skillSet({
     ride:[skadvanced],
@@ -736,7 +737,7 @@ subguilds = {
   }),
   majordomo:new skillSet({
     karma:[1],
-    listen:[skmaster],
+    listencity:[skmaster],
     pilot:[skmaster],
     guarding:[skadvanced],
     cooking:[skadvanced],
@@ -790,7 +791,7 @@ subguilds = {
   mastertrader:new skillSet({
     karma:[1],
     cavilish:[yes],
-    listen:[skmaster],
+    listencity:[skmaster],
     value:[skmaster],
     pilot:[skmaster],
     haggle:[skadvanced],
@@ -800,7 +801,7 @@ subguilds = {
   minstrel:new skillSet({
     karma:[1],
     instrumentmaking:[skmaster],
-    listen:[skadvanced],
+    listencity:[skadvanced],
     haggle:[skjourneyman],
     watch:[skjourneyman],
     sleightofhand:[skadvanced]
