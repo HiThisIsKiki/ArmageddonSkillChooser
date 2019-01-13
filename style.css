@@ -333,3 +333,7 @@ h1 a
   color:#dc7328;
   cursor:pointer;
 }
+.chooseskills *::selection
+{
+  background:transparent;
+};

@@ -128,6 +128,7 @@ skills = {
   },
 
   special:{
+    languagebonus:"Adept at picking up new languages",
     
     foragefoodcity:"Forage for food in the wilderness",
     foragefoodwild:"Forage for scraps in cities",
@@ -530,6 +531,7 @@ subguilds = {
     toolmaking:[skjourneyman]
   }),
   bard:new skillSet({
+    languagebonus:[yes],
     listen:[skjourneyman],
     sleightofhand:[skadvanced],
     haggle:[skjourneyman],
@@ -609,6 +611,7 @@ subguilds = {
     haggle:[skjourneyman],
   }),
   linguist:new skillSet({
+    languagebonus:[yes],
     allundean:[yes],
     mirukkim:[yes]
   }),
@@ -1227,7 +1230,7 @@ function listSuggestions(keywords)
       }
       if (check.length == 0)
       {
-        var link = $('<a>');
+        var link = $('<a target="_blank">');
         link.attr('href',"index.html?"+pretty(i)+'/'+pretty(j));
         link.html(pretty(i)+'/'+pretty(j));
         //Check for karma
