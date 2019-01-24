@@ -584,7 +584,7 @@ subguilds = {
     disarm:[skjourneyman],
     slashingweapons:[skapprentice]
   }),
-  guarding:new skillSet({
+  guard:new skillSet({
     rescue:[skjourneyman],
     subdue:[skjourneyman],
     guarding:[skjourneyman],
