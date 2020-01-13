@@ -307,6 +307,12 @@ p
   background:#5a4838;
   color:white;
 }
+.skillToggle.masteron
+{
+  background:#5a4838;
+  color:white;
+  border-color:black;
+}
 ::-webkit-scrollbar             
 {
   display:none;

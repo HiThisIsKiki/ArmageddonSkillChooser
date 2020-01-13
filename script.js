@@ -15,6 +15,9 @@ var levelText = {
   101:"Yes"
 }
 
+//Remove right clicking
+document.oncontextmenu = function() {return false;};
+
 //Skill organization
 skills = {
   misc:{
@@ -1059,7 +1062,6 @@ function addSkill(skill, source) //Skill {category, name, max,[branched]}
   if (check.length > 0)
   {
     let skillname = skill.name.toLowerCase().replace(' ','');
-    console.log(skill,source);
     //Skill is in already.
     //Check if we need to update the source.
     if ( $('.skillcontainer[name="'+skillname+'"] .sourcetext').html() != source ){
@@ -1191,7 +1193,17 @@ $(document).ready(function(){
   {
     //Open normal page
     populateSkills();
-    $('.skillToggle').click(skillToggleClick);
+    $('.skillToggle').mouseup(function(e){
+      if (e.which == 1)
+      {
+        skillToggleClick(e)
+      }
+      else if (e.which == 3)
+      {
+       
+        skillMasterToggleClick(e)
+      }
+    }); 
   }
   else {
     showChar(param);
@@ -1214,20 +1226,41 @@ function populateSkills()
     }
   }
 }
-function skillToggleClick(e)
+
+function skillMasterToggleClick(e)
 {
-  var button = $(e.target);
-  button.toggleClass('on');
-  if (button.hasClass('on'))
+   var button = $(e.target);   
+  if (button.hasClass('on') || button.hasClass('masteron'))
   {
-    keywords[button.attr('name')] = true;
+    button.removeClass('on');
+    button.removeClass('masteron');
+    delete keywords[button.attr('name')];    
   }
   else
   {
-    delete keywords[button.attr('name')];
+    button.removeClass('on');
+    button.addClass('masteron');    
+    keywords[button.attr('name')] = 'master';
   }
   $('.sidebar').animate({scrollTop:0},0);
-  listSuggestions(Object.keys(keywords));
+  listSuggestions(keywords);
+}
+function skillToggleClick(e)
+{
+  var button = $(e.target);  
+  if (button.hasClass('on') || button.hasClass('masteron'))
+  {
+    button.removeClass('on');
+    button.removeClass('masteron');
+    delete keywords[button.attr('name')];    
+  }
+  else
+  {
+    button.addClass('on');
+    keywords[button.attr('name')] = true;    
+  }
+  $('.sidebar').animate({scrollTop:0},0);
+  listSuggestions(keywords);
 }
 function suggest(str)
 {
@@ -1262,7 +1295,9 @@ function suggestCheck(e)
   suggest(e.target.value);
 }
 function listSuggestions(keywords)
-{  
+{    
+  detailed_keywords = keywords
+  keywords = Object.keys(keywords)  
   var toAdd = [];
   if (keywords.length == 0)
   {
@@ -1274,16 +1309,22 @@ function listSuggestions(keywords)
   {
     for (var j in subguilds)
     {
-      var check = keywords.slice();
+      var check = keywords.slice();      
       for (k=check.length-1;k>=0;k--)
       {
         if (guilds[i][keywords[k]])
         {
-          check.splice(k,1)
+          if (detailed_keywords[keywords[k]] != 'master' || guilds[i][keywords[k]].max == 100)
+          {                    
+              check.splice(k,1)
+          }                    
         }
         else if (subguilds[j][keywords[k]])
         {
-          check.splice(k,1)
+          if (detailed_keywords[keywords[k]] != 'master' || subguilds[j][keywords[k]].max == 100)
+          {
+            check.splice(k,1)  
+          }          
         }
       }
       if (check.length == 0)
@@ -1306,7 +1347,7 @@ function listSuggestions(keywords)
   toAdd = toAdd.sort(function(one,two){
     return (one[1] - two[1]);
   });
-  console.log(toAdd);
+  
   for (var i in toAdd)
   {
     $('.suggestions').append(toAdd[i][0]);
@@ -1324,6 +1365,6 @@ function reset()
 {
   $('.on').removeClass("on");
   keywords= {};
-  listSuggestions(Object.keys(keywords))
+  listSuggestions(keywords)
   $('.suggestions').html('Choose some skills on the left!');
 }
